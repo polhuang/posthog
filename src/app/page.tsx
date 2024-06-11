@@ -16,7 +16,6 @@ import {
 } from '@/components/SocialIcons'
 import logoAWS from '@/images/logos/aws-logo.jpeg'
 import logoAltium from '@/images/logos/altium-logo.jpeg'
-import darkLogoAWS from '@/images/logos/aws-logo.jpeg'
 import logoBackmatter from '@/images/logos/backmatter-logo.png'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
@@ -100,7 +99,6 @@ interface Role {
   company: string
   title: string
   logo: ImageProps['src']
-  logoAWS: ImageProps['src']
   start: string | { label: string; dateTime: string }
   end: string | { label: string; dateTime: string }
 }
