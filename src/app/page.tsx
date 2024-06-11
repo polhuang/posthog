@@ -223,22 +223,22 @@ export default async function Home() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-3xl tracking-tight text-zinc-800 sm:text-4xl dark:text-zinc-100">
-            Hi PostHog! If you're reading this, just FYI, I'm not quite finished!
+            Hi PostHog! If you&apos;re reading this, just FYI, I&apos;m not quite finished!
           </h1>
           <h1 className="mt-6 text-xl">
-            I'm but an itinerant sales rep looking for a new home
+            I&apos;m but an itinerant sales rep looking for a new home
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              After spending a year working on my startup Backmatter, I'm now winding down that project and returning to sales. I still have the startup itch though, and I'm looking for a home at a startup with a mission I can believe in, a product I can love, a team that can inspire me and help me grow. I want to have a meaningful impact. I think Posthog is that home.
+              After spending a year working on my startup Backmatter, I&apos;m now winding down that project and returning to sales. I still have the startup itch though, and I&apos;m looking for a home at a startup with a mission I can believe in, a product I can love, a team that can inspire me and help me grow. I want to have a meaningful impact. I think Posthog is that home.
             </p>
             <p>
-              Here's what I think sets me apart:
+              Here&apos;s what I think sets me apart:
               <Accordion type="single" collapsible className="ml-7 mr-16">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>I try to think big</AccordionTrigger>
                   <AccordionContent>
-                    <p>It's in my nature to think about how things can be done better. Many of my ideas sucked. But some were good and made a difference.
+                    <p>It&apos;s in my nature to think about how things can be done better. Many of my ideas sucked. But some were good and made a difference.
                     </p>
                     <p className="mt-3">
                       At Octopart, I redesigned our deck, developed and led the transition to a new pricing model for our flagship product. At AWS, I built a customer portal and a data import and account prioritization tool using Excel VBA. I introduced a new model for prioritizing accounts that was adopted across the startup org.
@@ -246,21 +246,21 @@ export default async function Home() {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                  <AccordionTrigger>I'm customer-obsessed</AccordionTrigger>
+                  <AccordionTrigger>I&apos;m customer-obsessed</AccordionTrigger>
                   <AccordionContent>
-                    I'm customer-obsessed
+                    I&apos;m customer-obsessed
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                  <AccordionTrigger>I'm relentlessly curious</AccordionTrigger>
+                  <AccordionTrigger>I&apos;m relentlessly curious</AccordionTrigger>
                   <AccordionContent>
-                    I'm relentlessly curious
+                    I&apos;m relentlessly curious
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                  <AccordionTrigger>I'm technical</AccordionTrigger>
+                  <AccordionTrigger>I&apos;m technical</AccordionTrigger>
                   <AccordionContent>
-                    I'm technical
+                    I&apos;m technical
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -269,13 +269,13 @@ export default async function Home() {
               Posthog seems like a place where my quirks and qualities would be a real asset. I dive into this in the PostHog section.
             </p>
             <h2 className="mt-6 text-lg font-bold">
-              Cool, but what's this?
+              Cool, but what&apos;s this?
             </h2>
             <p>
-              I wanted to take the initiative to demonstrate what I've learned about PostHog's tech, so I put this site together both as a canvas to do that while telling a bit more about myself.
+              I wanted to take the initiative to demonstrate what I&apos;ve learned about PostHog&apos;s tech, so I put this site together both as a canvas to do that while telling a bit more about myself.
             </p>
             <p>
-              I've enabled PostHog tracking on here, and thanks to your embeddable dashboards, I can visualize my work using real-world data.
+              I&apos;ve enabled PostHog tracking on here, and thanks to your embeddable dashboards, I can visualize my work using real-world data.
             </p>
             <p>
               You can find the source code here.

@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, useEffect, useRef } from 'react'
+import { createContext, useEffect, useRef, ReactNode } from 'react'
 import { usePathname } from 'next/navigation'
 import { ThemeProvider, useTheme } from 'next-themes'
 import posthog from 'posthog-js'
@@ -16,7 +16,7 @@ if (typeof window !== 'undefined') {
   })
   } else {
     console.error('No PostHog key or host')
-  }z
+  }
 }
 
 export function CSPostHogProvider({ children }:  { children: ReactNode}) {
