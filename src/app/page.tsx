@@ -1,8 +1,14 @@
 import Image, { type ImageProps } from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
+import {Button as Button2} from '@/components/ui/button'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
@@ -17,7 +23,6 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 import portraitImage from '@/images/IMG-20240305-WA0008.jpg'
 
@@ -155,7 +160,6 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 function Resume() {
-  
   let resume: Array<Role> = [
     {
       company: 'Backmatter',
@@ -182,8 +186,6 @@ function Resume() {
       end: '2020',
     },
   ]
-
-  
 
   return (
     <div className="lg:pl-20">
@@ -226,20 +228,59 @@ export default async function Home() {
             Hi PostHog! If you're reading this, just FYI, I'm not quite finished!
           </h1>
           <h1 className="mt-6 text-xl">
-            I'm a sales rep with a strong technical background who loves open-source
+            I'm but an itinerant sales rep looking for a new home
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              After spending a year working on my startup Backmatter, I'm now winding down that project and returning to sales. I'm looking for a role where my strengths would be of value.
+              After spending a year working on my startup Backmatter, I'm now winding down that project and returning to sales. I still have the startup itch though, and I'm looking for a home at a startup with a mission I can believe in, a product I can love, a team that can inspire me and help me grow. I want to have a meaningful impact. I think Posthog is that home.
             </p>
             <p>
-              What sets me apart is my technical aptitude and my genuine love for tech: it helps me empathize with customers, ask deeper questions, build trust, and ultimately act as a trusted advisor.
+              Here's what I think sets me apart:
+              <Accordion type="single" collapsible className="ml-7 mr-16">
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>I try to think big</AccordionTrigger>
+                  <AccordionContent>
+                    <p>It's in my nature to think about how things can be done better. Many of my ideas sucked. But some were good and made a difference.
+                    </p>
+                    <p className="mt-3">
+                      At Octopart, I redesigned our deck, developed and led the transition to a new pricing model for our flagship product. At AWS, I built a customer portal and a data import and account prioritization tool using Excel VBA. I introduced a new model for prioritizing accounts that was adopted across the startup org.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-2">
+                  <AccordionTrigger>I'm customer-obsessed</AccordionTrigger>
+                  <AccordionContent>
+                    I'm customer-obsessed
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-3">
+                  <AccordionTrigger>I'm relentlessly curious</AccordionTrigger>
+                  <AccordionContent>
+                    I'm relentlessly curious
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-3">
+                  <AccordionTrigger>I'm technical</AccordionTrigger>
+                  <AccordionContent>
+                    I'm technical
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </p>
             <p>
-              That's why I'm so excited about Posthog ... to be continued
+              Posthog seems like a place where my quirks and qualities would be a real asset. I dive into this in the PostHog section.
+            </p>
+            <h2 className="mt-6 text-lg font-bold">
+              Cool, but what's this?
+            </h2>
+            <p>
+              I wanted to take the initiative to demonstrate what I've learned about PostHog's tech, so I put this site together both as a canvas to do that while telling a bit more about myself.
             </p>
             <p>
-              ... to be continued
+              I've enabled PostHog tracking on here, and thanks to your embeddable dashboards, I can visualize my work using real-world data.
+            </p>
+            <p>
+              You can find the source code here.
             </p>
           </div>
         </div>
