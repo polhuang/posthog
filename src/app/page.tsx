@@ -100,7 +100,7 @@ interface Role {
   company: string
   title: string
   logo: ImageProps['src']
-  darkLogoAWS: ImageProps['src']
+  logoAWS: ImageProps['src']
   start: string | { label: string; dateTime: string }
   end: string | { label: string; dateTime: string }
 }
