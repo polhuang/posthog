@@ -116,8 +116,7 @@ function MobileNavigation(
           enterTo="opacity-100 scale-100"
           leave="duration-150 ease-in"
           leaveFrom="opacity-100 scale-100"
-          leaveTo="opacity-0 sca
-          le-95"
+          leaveTo="opacity-0 scale-95"
         >
           <Popover.Panel
             focus
@@ -134,8 +133,9 @@ function MobileNavigation(
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 <MobileNavItem href="/about">About</MobileNavItem>
-                <MobileNavItem href="/posthog">Why Posthog</MobileNavItem>
+                <MobileNavItem href="/posthog">Posthog</MobileNavItem>
                 <MobileNavItem href="/backmatter">Backmatter</MobileNavItem>
+                <MobileNavItem href="/analytics">Analytics</MobileNavItem>
               </ul>
             </nav>
           </Popover.Panel>
@@ -175,9 +175,10 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
       <ul className="flex rounded-2xl bg-white/90 py-1.5 px-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/about">About</NavItem>
-        <NavItem href="/posthog">PostHog</NavItem>
+        <NavItem href="/about"><div className="whitespace-nowrap">About me</div></NavItem>
+        <NavItem href="/posthog"><div className="whitespace-nowrap">Why PostHog</div></NavItem>
         <NavItem href="/backmatter">Backmatter</NavItem>
+        <NavItem href="/analytics"><div className="whitespace-nowrap">PostHog Analytics</div></NavItem>
       </ul>
     </nav>
   )

@@ -8,7 +8,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Button } from '@/components/Button'
-import {Button as Button2} from '@/components/ui/button'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
@@ -197,7 +196,7 @@ function Resume() {
             <Role key={roleIndex} role={role} />
           ))}
         </ol>
-        <Button href="#" variant="secondary" className="group mt-6 w-full border border-gray-300 dark:border-gray-600 transition hover:bg-[#f4f4f8] bg-transparent">
+        <Button href="#b" variant="secondary" className="group mt-6 w-full border border-gray-300 dark:border-gray-600 transition hover:bg-[#f4f4f8] bg-transparent">
           Download Resume
           <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
         </Button>
@@ -225,16 +224,16 @@ export default async function Home() {
           <h1 className="text-3xl tracking-tight text-zinc-800 sm:text-4xl dark:text-zinc-100">
             Hi PostHog! If you&apos;re reading this, just FYI, I&apos;m not quite finished!
           </h1>
-          <h1 className="mt-6 text-xl">
+          <h2 className="mt-6 text-xl">
             I&apos;m but an itinerant sales rep looking for a new home
-          </h1>
+          </h2>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
               After spending a year working on my startup Backmatter, I&apos;m now winding down that project and returning to sales. I still have the startup itch though, and I&apos;m looking for a home at a startup with a mission I can believe in, a product I can love, a team that can inspire me and help me grow. I want to have a meaningful impact. I think Posthog is that home.
             </p>
             <p>
               Here&apos;s what I think sets me apart:
-              <Accordion type="single" collapsible className="ml-7 mr-16">
+              <Accordion type="single" collapsible className="ml-7 mr-16 mt-2">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>I try to think big</AccordionTrigger>
                   <AccordionContent>
@@ -257,7 +256,7 @@ export default async function Home() {
                     I&apos;m relentlessly curious
                   </AccordionContent>
                 </AccordionItem>
-                <AccordionItem value="item-3">
+                <AccordionItem value="item-4%xs">
                   <AccordionTrigger>I&apos;m technical</AccordionTrigger>
                   <AccordionContent>
                     I&apos;m technical
@@ -272,13 +271,13 @@ export default async function Home() {
               Cool, but what&apos;s this?
             </h2>
             <p>
-              I wanted to take the initiative to demonstrate what I&apos;ve learned about PostHog&apos;s tech, so I put this site together both as a canvas to do that while telling a bit more about myself.
+              I wanted to take the initiative to demonstrate what I&apos;ve learned about PostHog&apos;s tech, so I put this site together both as a canvas to do that while telling a bit more about myself and what I worked on at my startup.
             </p>
             <p>
-              I&apos;ve enabled PostHog tracking on here, and thanks to your embeddable dashboards, I can visualize my work using real-world data.
+              I&apos;ve enabled PostHog tracking on this site, and thanks to your embeddable dashboards, I can visualize my work using real-world data.
             </p>
             <p>
-              You can find the source code here.
+              You can find the source code <Link href="https://github.com/polhuang/posthog" className="underline transition text-zinc-400 hover:text-teal-500">here</Link>.
             </p>
           </div>
         </div>
@@ -286,10 +285,10 @@ export default async function Home() {
           <Resume />
           <div className="lg:pl-20 mt-8 ml-6">
             <ul role="list">
-              <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+              <SocialLink href="https://www.linkedin.com/in/paulleehuang" icon={LinkedInIcon} className="mt-4">
                 My LinkedIn
               </SocialLink>
-            <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+            <SocialLink href="https://github.com/polhuang" icon={GitHubIcon} className="mt-4">
               My GitHub
             </SocialLink>
               <SocialLink
