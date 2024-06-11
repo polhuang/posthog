@@ -46,14 +46,14 @@ export default function PostHog() {
             Analytics
           </h1>
           <p className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-            Here's the fun part: putting PostHog to use! This'll be a work in progress, as I learn to utilize more PostHog features.
+            Here&apos;s the fun part: putting PostHog to use! This&apos;ll be a work in progress, as I learn to utilize more PostHog features.
           </p>
           <h2 className="mt-6 text-2xl font-bold">
             Playground
           </h2>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              Let's add some elements we can track. Please interact with them to populate the dashboards!
+              Let&apos;s add some elements we can track. Please interact with them to populate the dashboards!
             </p>
             <p>
               Starting with a serious question. 
@@ -67,7 +67,7 @@ export default function PostHog() {
                 <DialogHeader>
                   <DialogTitle>You won $1000 PolBucks!</DialogTitle>
                   <DialogDescription>
-                    Submit your SSN to redeem (please don't)
+                    Submit your SSN to redeem (please don&apos;t)
                   </DialogDescription>
                 </DialogHeader>
                 <div className="flex items-center space-x-2">
@@ -102,7 +102,7 @@ export default function PostHog() {
             Playground
           </h2>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-              <iframe width="100%" height="400" frameborder="0" allowfullscreen src="https://us.posthog.com/embedded/tybMtzfZqafFNvdLaSPO88Ee7UTcZQ"></iframe>
+            <iframe width="100%" height="400" src="https://us.posthog.com/embedded/tybMtzfZqafFNvdLaSPO88Ee7UTcZQ"></iframe>
             </div>
         </div>
     </Container>

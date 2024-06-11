@@ -46,7 +46,7 @@ export function RadioGroupForm() {
           name="type"
           render={({ field }) => (
             <FormItem className="space-y-3">
-              <FormLabel>What's the best starter Pokemon?</FormLabel>
+              <FormLabel>What&apos;s the best starter Pokemon?</FormLabel>
               <FormControl>
                 <RadioGroup
                   onValueChange={field.onChange}
