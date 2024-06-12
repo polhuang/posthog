@@ -1,8 +1,10 @@
 "use client"
- 
+
+import { useState } from "react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
+import posthog from "posthog-js"
  
 import { Button } from "@/components/ui/button"
 import {
@@ -17,25 +19,36 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { toast } from "@/components/ui/use-toast"
  
 const FormSchema = z.object({
-  type: z.enum(["all", "mentions", "none"], {
+  type: z.enum(["bulbasaur", "charmander", "squirtle"], {
     required_error: "You need to select a notification type.",
   }),
 })
  
-export function RadioGroupForm() {
+export function PokeForm() {
+
+  const [pokechoice, setPokechoice] = useState("")
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
   })
  
   function onSubmit(data: z.infer<typeof FormSchema>) {
+    console.log(data.type)
+    posthog.capture('pokemon selection', {pokemon: data.type})
     toast({
       title: "You submitted the following values:",
       description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-        </pre>
+        <p>nice</p>
       ),
     })
+    setPokechoice(data.type)
+  }
+
+  if (pokechoice == "bulbasaur") {
+    return <p>Wrong! Charmander beats Bulbasaur, duh! :-P</p>
+  } else if (pokechoice == "charmander") {
+    return <p>Wrong! Squirtle beats Charmander, duh! :-P</p>
+  } else if (pokechoice == "squirtle") {
+    return <p>Wrong! Bulbasaur beats Squirtle, duh!:-P</p>
   }
  
   return (
@@ -55,7 +68,7 @@ export function RadioGroupForm() {
                 >
                   <FormItem className="flex items-center space-x-3 space-y-0">
                     <FormControl>
-                      <RadioGroupItem value="all" />
+                      <RadioGroupItem value="charmander" />
                     </FormControl>
                     <FormLabel className="font-normal">
                       Charmander
@@ -63,7 +76,7 @@ export function RadioGroupForm() {
                   </FormItem>
                   <FormItem className="flex items-center space-x-3 space-y-0">
                     <FormControl>
-                      <RadioGroupItem value="mentions" />
+                      <RadioGroupItem value="bulbasaur" />
                     </FormControl>
                     <FormLabel className="font-normal">
                       Bulbasaur
@@ -71,7 +84,7 @@ export function RadioGroupForm() {
                   </FormItem>
                   <FormItem className="flex items-center space-x-3 space-y-0">
                     <FormControl>
-                      <RadioGroupItem value="none" />
+                      <RadioGroupItem value="squirtle" />
                     </FormControl>
                     <FormLabel className="font-normal">
                       Squirtle

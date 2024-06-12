@@ -29,8 +29,8 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form"
-import { RadioGroupForm } from "@/components/RadioForm"
-
+import { PokeForm } from "@/components/PokeForm"
+import { z } from "zod"
 
 export const metadata: Metadata = {
   title: 'Why PostHog?',
@@ -58,7 +58,7 @@ export default function PostHog() {
             <p>
               Starting with a serious question. 
             </p>
-            <RadioGroupForm />
+            <PokeForm />
             <Dialog>
               <DialogTrigger asChild>
                 <Button>This button rocks - click this</Button>
@@ -103,6 +103,7 @@ export default function PostHog() {
           </h2>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <iframe width="100%" height="400" src="https://us.posthog.com/embedded/tybMtzfZqafFNvdLaSPO88Ee7UTcZQ"></iframe>
+            <iframe width="100%" height="400" src="https://us.posthog.com/embedded/HiSM7t7baWGr_h4SVdHjqrlL61m58g"></iframe>
             </div>
         </div>
     </Container>
