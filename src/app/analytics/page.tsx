@@ -2,6 +2,7 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
+import { ComicSansMode } from '@/components/ComicSansMode'
 import {
   Dialog,
   DialogClose,
@@ -31,6 +32,7 @@ import {
 } from "@/components/ui/form"
 import { PokeForm } from "@/components/PokeForm"
 import { z } from "zod"
+import { Switch } from "@/components/ui/switch"
 
 export const metadata: Metadata = {
   title: 'Why PostHog?',
@@ -106,6 +108,7 @@ export default function PostHog() {
             <iframe width="100%" height="400" src="https://us.posthog.com/embedded/HiSM7t7baWGr_h4SVdHjqrlL61m58g"></iframe>
             </div>
         </div>
+      <ComicSansMode />
     </Container>
   )
 }
