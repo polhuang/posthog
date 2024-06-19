@@ -112,19 +112,12 @@ export default function PostHog() {
             We can use feature flags to look at person profiles to enable or disable features. Let&apos; make a switch that turn the website font to Comic Sans.
           </p>
           <ComicSansMode />
-          <p className="mt-12">
-            After submitting the form, we add a <code>pokemon</code> property with the selected Pokemon. Here&apos;s a bar graph of the results:
-            <div className="mt-12">
-              <iframe width="100%" height="400" src="https://us.posthog.com/embedded/HiSM7t7baWGr_h4SVdHjqrlL61m58g">
-              </iframe>
-            </div>
             <p className="mt-12">
               Here, we assign a property to a user when they click the button. By default, it's <code>comicsansmode: "off"</code>. When they click the button, we change it to <code>"on"</code>. We do this with a click handler that asks PostHog for the <code>comicsansmode</code> property, then sets it to the other property. The click handler then makes the equivalent change to a state variable which controls the site font.
             </p>
             <p className="mt-6">
-              This is a horrible way to go about it but it demonstrates how quickly PostHog processes events and returns data.
+              This is a horrible way to go about it but it demonstrates how quickly PostHog processes events and returns data. Note that this will not work if you're using an ad blocker or Brave browser, since PostHog is a dependency.
             </p>
-          </p>
           <h2 className="mt-12 text-2xl font-bold">
             User paths
           </h2>
