@@ -222,10 +222,10 @@ export default async function Home() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-3xl tracking-tight text-zinc-800 sm:text-4xl dark:text-zinc-100">
-            Hi PostHog! If you&apos;re reading this, just FYI, I&apos;m not quite finished!
+            Hi PostHog!
           </h1>
           <h2 className="mt-6 text-xl">
-            I&apos;m but an itinerant sales rep looking for a new home
+            I&apos;m an itinerant sales rep looking for a new home
           </h2>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
