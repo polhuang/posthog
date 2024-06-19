@@ -271,14 +271,14 @@ At Octopart, I figured out what metrics were most compelling or useful to custom
                 </AccordionItem>
               </Accordion>
             </p>
-            <p>
-              Posthog seems like a place where my quirks and qualities would be a real asset. I dive into this in the PostHog section.
-            </p>
             <h2 className="mt-6 text-lg font-bold">
               Cool, but what&apos;s this?
             </h2>
             <p>
               I wanted to take the initiative to demonstrate what I&apos;ve learned about PostHog&apos;s tech, so I put this site together as a canvas showcasing some of PostHog&apos;s features. I&apos;ve enabled PostHog tracking on this site, and the last section contains a number of web elements on which I tested out more advanced features. And thanks to your embeddable dashboards, I can visualize my work using real-world data.
+            </p>
+            <p>
+              I don't expect anyone to read the content I put on here. It was originally meant to be filler content. While it's no longer filler, it's meant to be supplementary and completely optional.
             </p>
             <p>
               You can find the source code <Link href="https://github.com/polhuang/posthog" className="underline transition text-zinc-400 hover:text-teal-500">here</Link>.
