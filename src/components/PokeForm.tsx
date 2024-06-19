@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/form"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { toast } from "@/components/ui/use-toast"
+import { Card, CardContent, CardTitle, CardHeader } from '@/components/ui/card'
  
 const FormSchema = z.object({
   type: z.enum(["bulbasaur", "charmander", "squirtle"], {
@@ -44,14 +45,65 @@ export function PokeForm() {
   }
 
   if (pokechoice == "bulbasaur") {
-    return <p>Wrong! Charmander beats Bulbasaur, duh! :-P</p>
+    return (
+      <Card>
+        <CardHeader>
+          <CardTitle>
+            Wrong!
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          Charmander beats Bulbasaur, duh!
+        </CardContent>
+      </Card>
+    )
   } else if (pokechoice == "charmander") {
-    return <p>Wrong! Squirtle beats Charmander, duh! :-P</p>
+    return (
+      <Card>
+        <CardHeader>
+          <CardTitle>
+            Wrong!
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          Squirtle beats Charmander, duh!
+        </CardContent>
+      </Card>
+    )
+    
   } else if (pokechoice == "squirtle") {
-    return <p>Wrong! Bulbasaur beats Squirtle, duh!:-P</p>
+    return (
+      <Card>
+        <CardHeader>
+          <CardTitle>
+            Wrong!
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          Squirtle beats Charmander, duh!
+        </CardContent>
+      </Card>
+    )
   }
+
+  <Card>
+    <CardHeader>
+      <CardTitle>
+        Wrong!
+      </CardTitle>
+    </CardHeader>
+    <CardContent>
+      Charmander beats Bulbasaur, duh!
+    </CardContent>
+  </Card>
  
   return (
+    <div className="mt-12 w-[500px]">
+    <Card>
+      <CardHeader>
+        <CardTitle>What&apos;s the best starter Pokemon?</CardTitle>
+      </CardHeader>
+      <CardContent>
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="w-2/3 space-y-6">
         <FormField
@@ -59,7 +111,6 @@ export function PokeForm() {
           name="type"
           render={({ field }) => (
             <FormItem className="space-y-3">
-              <FormLabel>What&apos;s the best starter Pokemon?</FormLabel>
               <FormControl>
                 <RadioGroup
                   onValueChange={field.onChange}
@@ -99,5 +150,8 @@ export function PokeForm() {
         <Button type="submit">Submit</Button>
       </form>
     </Form>
+      </CardContent>
+      </Card>
+    </div>
   )
 }

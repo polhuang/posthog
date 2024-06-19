@@ -91,10 +91,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
   let variant = useFeatureFlagVariantKey('comic-sans-mode')
 
   useEffect(() => {
-
      (variant == 'variant1') ? setComicSansMode(true) : setComicSansMode(false)
   }, [variant])
-
 
   return (
     <AppContext.Provider value={{ previousPathname, toggleComicSansMode }}>

@@ -196,7 +196,7 @@ function Resume() {
             <Role key={roleIndex} role={role} />
           ))}
         </ol>
-        <Button href="#b" variant="secondary" className="group mt-6 w-full border border-gray-300 dark:border-gray-600 transition hover:bg-[#f4f4f8] bg-transparent">
+        <Button href="/resume.pdf" variant="secondary" className="group mt-6 w-full border border-gray-300 dark:border-gray-600 transition hover:bg-[#f4f4f8] bg-transparent">
           Download Resume
           <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
         </Button>
@@ -229,37 +229,44 @@ export default async function Home() {
           </h2>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              After spending a year working on my startup Backmatter, I&apos;m now winding down that project and returning to sales. I still have the startup itch though, and I&apos;m looking for a home at a startup with a mission I can believe in, a product I can love, a team that can inspire me and help me grow. I want to have a meaningful impact. I think Posthog is that home.
+              After spending a year working on my startup Backmatter, I&apos;m now winding it down and returning to sales. I still have the startup itch though, and I&apos;m looking for a home at a startup where I can have a meaningful impact, with a mission I can believe in, a product I can love, a team that can inspire me and help me.
             </p>
             <p>
               Here&apos;s what I think sets me apart:
               <Accordion type="single" collapsible className="ml-7 mr-16 mt-2">
                 <AccordionItem value="item-1">
-                  <AccordionTrigger>I try to think big</AccordionTrigger>
+                  <AccordionTrigger>I'm customer-obsessed</AccordionTrigger>
                   <AccordionContent>
-                    <p>It&apos;s in my nature to think about how things can be done better. Many of my ideas sucked. But some were good and made a difference.
-                    </p>
-                    <p className="mt-3">
-                      At Octopart, I redesigned our deck, developed and led the transition to a new pricing model for our flagship product. At AWS, I built a customer portal and a data import and account prioritization tool using Excel VBA. I introduced a new model for prioritizing accounts that was adopted across the startup org.
-                    </p>
+                    Over my time in sales, earning and keeping the trust of customers has been my north star. The satisfaction and sense of accomplishment I get when I make a customer happy is what I love most about sales. Making customers feel heard, empathizing with them, understanding what they&apos;re going through, and synthesizing everything I&apos;ve learned to solve their problems - this has always felt to me to be the primary directive in my work. 
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                  <AccordionTrigger>I&apos;m customer-obsessed</AccordionTrigger>
+                  <AccordionTrigger>I&apos;m relentlessly curious</AccordionTrigger>
                   <AccordionContent>
-                    I&apos;m customer-obsessed
+I have a natural and drive to learn and improve. I pick up technical concepts quickly, learning from teammates and customers alike to expand the repertoire of topics I can confidently speak to. I study continuously, and I try to do my research each time I come across concepts or terminology that I don&apos't understand. This is how I was eventually able to play a dual role of sales rep and solutions architect at AWS for nearly a year.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                  <AccordionTrigger>I&apos;m relentlessly curious</AccordionTrigger>
+                  <AccordionTrigger>I try to think big</AccordionTrigger>
                   <AccordionContent>
-                    I&apos;m relentlessly curious
+                    <p>
+                      I&apos;ve been lucky enough to have had supportive managers on teams who encouraged me to look for fresh ideas and new ways of doing things. As a result, I made a number of contributions that were more broadly impactful.
+                    </p>
+                    <p className="mt-6">
+At Octopart, I figured out what metrics were most compelling or useful to customers, learned SQL, and built out most of our sales analytics tooling. I researched, planned, and led the project to transition our flagship product to a new dynamic pricing model after reading about Eric Schmidt out rolling something similar out at Google. At AWS, my account prioritization methodology was adopted across the startup org, and I later built an automated account data ingestion and prioritization tool
+                    </p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4%xs">
-                  <AccordionTrigger>I&apos;m technical</AccordionTrigger>
+                  <AccordionTrigger>I&apos;m humble and eager to learn</AccordionTrigger>
                   <AccordionContent>
-                    I&apos;m technical
+                    My running philosophy is to treat my way of thinking and doing things as simultaneously good and bad, right and wrong. I have enough confidence to think independently and to get things done how I think they should be done. But I also understand that I operate on assumptions and biases shaped by a limited set of experiences. To me it&apos;s not just important to accept criticism but to welcome it or even seek it out.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-5%xs">
+                  <AccordionTrigger>I &lt;3 open-source</AccordionTrigger>
+                  <AccordionContent>
+                    My running philosophy is to treat my way of thinking and doing things as simultaneously good and bad, right and wrong. I have enough confidence to think independently and to get things done how I think they should be done. But I also understand that I operate on assumptions and biases shaped by a limited set of experiences. To me it&apos;s not just important to accept criticism but to welcome it or even seek it out.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -271,10 +278,7 @@ export default async function Home() {
               Cool, but what&apos;s this?
             </h2>
             <p>
-              I wanted to take the initiative to demonstrate what I&apos;ve learned about PostHog&apos;s tech, so I put this site together both as a canvas to do that while telling a bit more about myself and what I worked on at my startup.
-            </p>
-            <p>
-              I&apos;ve enabled PostHog tracking on this site, and thanks to your embeddable dashboards, I can visualize my work using real-world data.
+              I wanted to take the initiative to demonstrate what I&apos;ve learned about PostHog&apos;s tech, so I put this site together as a canvas showcasing some of PostHog&apos;s features. I&apos;ve enabled PostHog tracking on this site, and the last section contains a number of web elements on which I tested out more advanced features. And thanks to your embeddable dashboards, I can visualize my work using real-world data.
             </p>
             <p>
               You can find the source code <Link href="https://github.com/polhuang/posthog" className="underline transition text-zinc-400 hover:text-teal-500">here</Link>.

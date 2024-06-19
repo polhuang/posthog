@@ -133,7 +133,7 @@ function MobileNavigation(
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 <MobileNavItem href="/about">About</MobileNavItem>
-                <MobileNavItem href="/posthog">Posthog</MobileNavItem>
+                <MobileNavItem href="/opensource">Open Source</MobileNavItem>
                 <MobileNavItem href="/backmatter">Backmatter</MobileNavItem>
                 <MobileNavItem href="/analytics">Analytics</MobileNavItem>
               </ul>
@@ -175,8 +175,8 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
       <ul className="flex rounded-2xl bg-white/90 py-1.5 px-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/about"><div className="whitespace-nowrap">About me</div></NavItem>
-        <NavItem href="/posthog"><div className="whitespace-nowrap">Why PostHog</div></NavItem>
+        <NavItem href="/"><div className="whitespace-nowrap">About me</div></NavItem>
+        <NavItem href="/opensource"><div className="whitespace-nowrap">Open Source</div></NavItem>
         <NavItem href="/backmatter">Backmatter</NavItem>
         <NavItem href="/analytics"><div className="whitespace-nowrap">PostHog Analytics</div></NavItem>
       </ul>
