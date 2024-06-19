@@ -266,7 +266,7 @@ At Octopart, I figured out what metrics were most compelling or useful to custom
                 <AccordionItem value="item-5%xs">
                   <AccordionTrigger>I &lt;3 open-source</AccordionTrigger>
                   <AccordionContent>
-                    My running philosophy is to treat my way of thinking and doing things as simultaneously good and bad, right and wrong. I have enough confidence to think independently and to get things done how I think they should be done. But I also understand that I operate on assumptions and biases shaped by a limited set of experiences. To me it&apos;s not just important to accept criticism but to welcome it or even seek it out.
+                    Some rambling thoughts <a href="/opensource" className="underline">here</a>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
