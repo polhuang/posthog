@@ -94,7 +94,7 @@ export default function PostHog() {
           <h2 className="mt-12 text-2xl font-bold">
             Person profiles
           </h2>
-          <p className="mt-6">
+          <p className="mt-6 mb-6">
             Let's enable person profiles for all visitors and assign some property to them.
           </p>
           <PokeForm />
